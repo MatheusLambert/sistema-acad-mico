@@ -1,0 +1,15 @@
+CREATE DATABASE IF NOT EXISTS sistema_academico CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE sistema_academico;
+CREATE TABLE IF NOT EXISTS cursos (
+ id BIGINT NOT NULL AUTO_INCREMENT,
+ nome VARCHAR(150) NOT NULL,
+ modalidade VARCHAR(100) NOT NULL,
+ PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+CREATE TABLE IF NOT EXISTS professores (
+ id BIGINT NOT NULL AUTO_INCREMENT,
+ nome VARCHAR(150) NOT NULL,
+ email VARCHAR(150) NOT NULL,
+ PRIMARY KEY (id),
+ UNIQUE KEY uk_professores_email (email)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;

@@ -1,0 +1,1 @@
+Execute criar_tabelas.sql no MySQL; confirme as credenciais em Conexao.java; execute mvn compile e rode br.edu.faex.academico.Main. A Main cadastra e exclui registros de exemplo a cada execução. As classes de Aluno foram preservadas.
